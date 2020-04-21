@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Welcome To EDgeLedger</title>
   </head>
+  <!-- Adding id becuase We have Home menu -->
   <body id="home">
     <header class="hero">
       <div id="navbar" class="navbar">
@@ -43,6 +44,7 @@
 
     <main>
       <!-- About Icons -->
+      <!-- Adding id becuase We have About menu -->
       <section id="about" class="icons bg-light">
         <div class="flex-items">
           <div>
@@ -108,6 +110,7 @@
       </section>
 
       <!-- Cases -->
+      <!-- Adding id becuase we have Cases menu -->
       <section id="cases" class="cases flex-grid section-padding">
         <header class="section-header">
           <h4>This is what we do</h4>
@@ -136,6 +139,129 @@
           </div>
         </div>
       </section>
+
+      <!-- Blog -->
+      <!-- Want image on right side compare to About Solution,
+      therefor adding calss='flex-reverse' -->
+      <!-- Adding id becuase we have Blog menu -->
+      <section id="blog" class="blog flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./images/home/blog.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-secondary">
+              <h4>April 16 2020</h4>
+              <h2>Blog Post One</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci tenetur aliquam ea officia! Doloribus facilis
+                praesentium velit ipsam dicta non, exercitationem fugit fugiat
+                molestias, dolorum quibusdam consequatur porro provident dolore?
+              </p>
+              <a href="blog.html" class="btn btn-outline">
+                <i class="fas fa-chevron"></i>
+                Read Our Blog
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <!-- Even we don't have Team menu
+      we decide to add id -->
+      <section id="team" class="team section-padding">
+        <header class="section-header">
+          <h4>Who we are</h4>
+          <h2>Our Professional Team</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+            porro.
+          </p>
+        </header>
+        <div class="flex-items">
+          <div>
+            <img src="./images/team/person1.jpg" alt="" />
+            <h4>John Doe</h4>
+            <p>President</p>
+          </div>
+          <div>
+            <img src="./images/team/person2.jpg" alt="" />
+            <h4>Jane Doe</h4>
+            <p>Vice President</p>
+          </div>
+          <div>
+            <img src="./images/team/person3.jpg" alt="" />
+            <h4>Steve Smith</h4>
+            <p>Marketing Head</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <!-- Adding id because we have Contact menu -->
+      <section id="contact" class="contact flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./images/home/contact.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>Request Callback</h2>
+
+              <form action="" class="callbakc-form">
+                <div class="form-control">
+                  <label for="name"></label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter name"
+                  />
+                </div>
+
+                <div class="form-control">
+                  <label for="email"></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter email"
+                  />
+                </div>
+
+                <div class="form-control">
+                  <label for="phone"></label>
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Enter phone"
+                  />
+                </div>
+
+                <input type="submit" value="Send" id="submit" class="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2020 - EDgeLedger</p>
+    </footer>
   </body>
 </html>

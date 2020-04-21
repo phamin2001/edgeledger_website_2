@@ -41,7 +41,7 @@ img {
   font-weight: 400;
 }
 
-#navbar {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,19 +55,18 @@ img {
   padding: 0 30px;
 }
 
-#navbar ul {
+.navbar ul {
   display: flex;
-  justify-content: space-evenly;
 }
 
-#navbar ul li a {
+.navbar ul li a {
   color: #fff;
   /* Making spaces btween links */
   padding: 10px 20px;
   margin: 0 5px;
 }
 
-#navbar ul li a:hover {
+.navbar ul li a:hover {
   border-bottom: #28a745 2px solid;
 }
 
@@ -125,14 +124,19 @@ img {
   z-index: 10;
 }
 
+.hero.blog {
+  background: url('../images/home/blog.jpg') no-repeat center center/cover;
+  height: 30vh;
+}
+
 /* Icons */
 .icons {
   padding: 30px;
-  margin-bottom: 15px;
 }
 
 .icons h3 {
-  font-size: bold;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .icons i {
@@ -146,4 +150,85 @@ img {
 
 .cases img:hover {
   opacity: 0.7;
+}
+
+.team img {
+  border-radius: 50%;
+}
+
+/* Post */
+.post {
+  padding: 50px 30px;
+}
+
+.post h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: #ccc solid 1px;
+}
+
+.post .meta {
+  /* Push meta down */
+  margin-bottom: 30px;
+}
+
+/* image is huge becuase by default is 100% */
+.post img {
+  width: 300px;
+  border-radius: 50%;
+  /* image is inline element, since we want it
+  as center, first we have to set display as blocl */
+  display: block;
+  margin: 0 auto 30px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #28a745;
+}
+
+.footer .social > * {
+  margin-right: 30px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .team img {
+    width: 70%;
+  }
 }

@@ -64,6 +64,10 @@
 }
 
 /* Flex columns */
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+
 .flex-columns .row {
   display: flex;
   flex-direction: row;
@@ -100,7 +104,7 @@
 
 .flex-columns h2 {
   font-size: 40px;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 .flex-columns h4 {
@@ -121,7 +125,6 @@
   padding: 30px;
   margin: 20px 20px 40px;
 }
-
 
 .section-header h2 {
   font-size: 40px;
@@ -145,4 +148,38 @@
   /* for safety */
   max-width: 25%;
   padding: 0 4px;
+}
+
+/* Callback From */
+.callbakc-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.callbakc-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.callbakc-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callbakc-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f5f5f5 1px solid;
+}
+
+/* Get rid of blue border when click in the input box */
+.callbakc-form input:focus {
+  outline-color: #28a745;
+}
+
+
+.callbakc-form .btn {
+  padding: 12px 0;
+  /* push button down */
+  margin-top: 20px;
 }
