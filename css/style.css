@@ -53,6 +53,11 @@ img {
   color: #fff;
   opacity: 0.8;
   padding: 0 30px;
+  transition: 0.5s;
+}
+
+.navbar.top {
+  background: transparent;
 }
 
 .navbar ul {

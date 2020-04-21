@@ -16,7 +16,7 @@
   <!-- Adding id becuase We have Home menu -->
   <body id="home">
     <header class="hero blog">
-      <div id="navbar" class="navbar">
+      <div id="navbar" class="navbar top">
         <h1 class="logo">
           <!-- Using span becuase it's inline elements -->
           <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span
@@ -45,7 +45,7 @@
           <i class="fas fa-user"></i> Posted by <strong>John Doe</strong> |
           April 23 2020
         </p>
-        <img src="./images/blog/blog1.jpg" alt="">
+        <img src="./images/blog/blog1.jpg" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
           tenetur aliquam ea officia! Doloribus facilis praesentium velit ipsam
@@ -81,5 +81,26 @@
       </div>
       <p>Copyright &copy; 2020 - EDgeLedger</p>
     </footer>
+
+    <script>
+      const navbar = document.getElementById('navbar');
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!scrolled) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translateY(0)';
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add('top');
+          scrolled = false;
+        }
+      };
+    </script>
   </body>
 </html>
