@@ -64,14 +64,14 @@ img {
   display: flex;
 }
 
-.navbar ul li a {
+.navbar a {
   color: #fff;
   /* Making spaces btween links */
   padding: 10px 20px;
   margin: 0 5px;
 }
 
-.navbar ul li a:hover {
+.navbar a:hover {
   border-bottom: #28a745 2px solid;
 }
 
@@ -235,5 +235,10 @@ img {
 
   .team img {
     width: 70%;
+  }
+
+  .blog .content h1 {
+    padding: 2rem 0;
+    margin-top: 3rem;
   }
 }
